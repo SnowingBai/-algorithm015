@@ -2,7 +2,7 @@
 #### 递归（Recursion）
 * 基础概念  
 循环，通过函数体来进行的循环
-* template
+* template：  
 ``` javascript
 const recursion = (level, params) => {
     // recursion terminator
@@ -20,15 +20,15 @@ const recursion = (level, params) => {
 }
 ```
 
-* 注意点：
+* 注意点：  
 抵制人肉递归  
 寻找最近最简子问题  
 数学归纳思维  
 
 #### 分治（Divide & Conquer）
-* 本质
+* 本质  
 寻找重复性 --> 分解问题 --> 组合每个子问题的结果
-* template
+* template：  
 ```javascript
 const devide_conquer = (problem, params) => {
     // recursion terminator
@@ -53,5 +53,5 @@ const devide_conquer = (problem, params) => {
 
 #### 回溯
 * 基本概念  
-采用试错思想，尝试分布去解决一个问题，不能得到有效解答结果时，将取消上一步或上几步的计算，再尝试其他可能分步方法
+采用试错思想，尝试分布去解决一个问题，不能得到有效解答结果时，将取消上一步或上几步的计算，再尝试其他可能分步方法  
 *[最坏情况：时间复杂度指数级]*
