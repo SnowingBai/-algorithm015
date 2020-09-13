@@ -2,21 +2,21 @@
 #### 递归（Recursion）
 * 基础概念  
 循环，通过函数体来进行的循环
-```
-public void recur(init level, init param) {
-    // terminator
+* template
+``` javascript
+const recursion = (level, params) => {
+    // recursion terminator
     if (level > MAX_LEVEL) {
-        // precess result
+        process_result
         return
     }
     
-    // process current logic
-    process(level, param)
+    // process(level, params)
     
     // drill down
-    recur(level: level + 1, newParam)
+    recursion(level, params)
     
-    // restore current status
+    // clean current level status if needed
 }
 ```
 
@@ -28,6 +28,28 @@ public void recur(init level, init param) {
 #### 分治（Divide & Conquer）
 * 本质
 寻找重复性 --> 分解问题 --> 组合每个子问题的结果
+* template
+```javascript
+const devide_conquer = (problem, params) => {
+    // recursion terminator
+    if (problem == null) {
+        precess_result
+        return
+    }
+    
+    // process current problem
+    subproblems = split_problem(problem, data)
+    subresult1 = devide_conquer(subproblem[0], p1)
+    subresult2 = devide_conquer(subproblem[1], p1)
+    subresult3 = devide_conquer(subproblem[2], p1)
+    ...
+    
+    // merge
+    result = process_result(subresult1, subresult2, subresult3, ...)
+    
+    // revert the current level status
+}
+```
 
 #### 回溯
 * 基本概念  
