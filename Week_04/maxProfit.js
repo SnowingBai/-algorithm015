@@ -9,6 +9,5 @@ var maxProfit = function(prices) {
             max += prices[i] - prices[i - 1]
         }
     }
-
     return max
 };
