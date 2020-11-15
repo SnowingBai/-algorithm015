@@ -448,4 +448,4 @@
 - Boyer-Moore
 - Sunday
 
-*XMind: ZEN - Trial Version*
+![avatar](/算法总结.png)
